@@ -77,7 +77,8 @@ topContent.children[1].children[1].textContent = siteContent['main-content']['ab
 const bottomContent = document.querySelector('.bottom-content')
 const h4sBottom = bottomContent.querySelectorAll('h4')
 h4sBottom[0].textContent = siteContent['main-content']['services-h4']
-h4sBottom[1].textContent = siteContent['main-content']['produc']
+h4sBottom[1].textContent = siteContent['main-content']['product-h4']
+h4sBottom[2].textContent = siteContent['main-content']['vision-h4']
 
 
 
