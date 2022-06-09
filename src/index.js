@@ -80,7 +80,24 @@ h4sBottom[0].textContent = siteContent['main-content']['services-h4']
 h4sBottom[1].textContent = siteContent['main-content']['product-h4']
 h4sBottom[2].textContent = siteContent['main-content']['vision-h4']
 
+const paraBottom = bottomContent.querySelectorAll('p')
+paraBottom[0].textContent = siteContent['main-content']['services-content']
+paraBottom[1].textContent = siteContent['main-content']['product-content']
+paraBottom[2].textContent = siteContent['main-content']['vision-content']
 
+// call to action button
+
+document.querySelector('.cta .cta-text h1').textContent = siteContent.cta.h1 //Here i am being very specific since 
+document.querySelector('.cta .cta-text button').textContent = siteContent.cta.button
+
+// navigation links
+
+const navLinks = document.querySelectorAll('header nav a')
+const navLinksTexts = Object.values(siteContent.nav)
+navLinks.forEach((link, index) =>{
+  link.textContent = navLinksTexts[index]
+  link.classList.add('italic')
+})
 
 
 
